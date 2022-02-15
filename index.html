@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image__Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="content1" class="active" src="./img1.jpeg" alt="">
+            <img id="content2" src="./img2.jpeg" alt="">
+            <img id="content3" src="./img3.jpeg" alt="">
+            <img id="content4" src="./img4.jpeg" alt="">
+            <img id="content5" src="./img5.jpeg" alt="">
+        </div>
+        <div class="dot-container">
+            <button onclick="dot(1)"></button>
+            <button onclick="dot(2)"></button>
+            <button onclick="dot(3)"></button>
+            <button onclick="dot(4)"></button>
+            <button onclick="dot(5)"></button>         
+        </div>
+        <button id="prev"> &lt; </button>
+        <button id="next"> &gt; </button>
+    </div>
+</body>
+    <script src="./app.js"></script>
+</html>
