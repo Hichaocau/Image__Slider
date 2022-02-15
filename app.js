@@ -7,6 +7,7 @@ const dots = document.querySelectorAll('.dot-container button')
 const images = document.querySelectorAll('.image-container img')
 
 function next(){
+    console.log(i)
     document.getElementById('content' + (i+1)).classList.remove("active"); 
     i = ( j + i + 1) % j; //lấy số dư
     console.log(i)
@@ -40,5 +41,6 @@ function dot(index){
     })
     document.getElementById('content' + index).classList.add("active"); 
     i = index -1 
+    console.log(i)
     dotsActive(index)
 }
