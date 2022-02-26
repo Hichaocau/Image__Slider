@@ -15,6 +15,8 @@ function next(){
     dotsActive(i + 1)
 }
 
+setInterval(next, 2000)
+
 function prev(){
     document.getElementById('content' + (i+1)).classList.remove("active"); 
     i = ( j + i - 1) % j; //lấy số dư
@@ -44,3 +46,11 @@ function dot(index){
     console.log(i)
     dotsActive(index)
 }
+
+var arr1 = [ 'abc' , 'def']
+var aar2 = [ 'qwe' , 'rty']
+var arr4 = [...arr1, ...aar2]
+var arr3 = arr1.concat(aar2)
+console.log(arr3)
+console.log(arr4)
+var arr5 = arr3
